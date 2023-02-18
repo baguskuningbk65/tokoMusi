@@ -18,7 +18,7 @@ class CreateCartsTable extends Migration
             $table->foreignId('product_id')->constrained('products')->onDelete('restrict')->onUpdate('restrict');
             $table->integer('product_qty');
             $table->integer('total_price');
-            $table->tinyInteger('status_checkout');
+            $table->tinyInteger ('status_checkout');
             $table->timestamps();
         });
     }
